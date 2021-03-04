@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home Page</title>
+		<style >
+			ul 
+			{
+				  list-style-type: none;
+				  margin: 0;
+				  padding: 0;
+				  overflow: hidden;
+				  background-color: #333;
+			}
+			li 
+			{
+  				float: left;
+			}
+			li a 
+			{
+				  display: block;
+				  color: white;
+				  text-align: center;
+				  padding: 14px 16px;
+				  text-decoration: none;
+			}
+			li a:hover 
+			{
+				  background-color: #ddd;
+				  color: black;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<h2  align="center"> PFSD SKILL1 (ONLINE GIFT SHOPPING SYSTEM)</h2>
+		
+		<ul>
+		  <li><a href="{{url_for('index')}}">Home</a></li>
+		  <li><a href="{{url_for('about')}}">About</a></li>
+		  <li><a href="{{url_for('stock_manager')}}">Stock Manager(Login)</a></li>
+		  <li><a href="{{url_for('shop_owner')}}">Shop Owner(Login)</a></li>
+		  <li><a href="{{url_for('customerregistration')}}">Customer(Register)</a></li>
+		  <li><a href="{{url_for('customerlogin')}}">Customer(Login)</a></li>
+		</ul>
+	</body>
+</html>

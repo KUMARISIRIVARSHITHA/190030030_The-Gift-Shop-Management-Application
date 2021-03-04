@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Shop Owner Login</title>
+		<style >
+			ul 
+			{
+				  list-style-type: none;
+				  margin: 0;
+				  padding: 0;
+				  overflow: hidden;
+				  background-color: #333;
+			}
+			li 
+			{
+  				float: left;
+			}
+			li a 
+			{
+				  display: block;
+				  color: white;
+				  text-align: center;
+				  padding: 14px 16px;
+				  text-decoration: none;
+			}
+			li a:hover 
+			{
+				  background-color: #ddd;
+				  color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<h2  align="center"> PFSD SKILL1 </h2>
+		<ul>
+		  <li><a href="{{url_for('index')}}">Home</a></li>
+		  <li><a href="{{url_for('about')}}">About</a></li>
+		  <li><a href="{{url_for('stock_manager')}}">Stock Manager(Login)</a></li>
+		  <li><a href="{{url_for('shop_owner')}}">Shop Owner(Login)</a></li>
+		  <li><a href="{{url_for('customerregistration')}}">Customer(Register)</a></li>
+		  <li><a href="{{url_for('customerlogin')}}">Customer(Login)</a></li>
+		</ul>
+		<br>
+		<h2  align="center"> SHOP OWNER LOGIN PAGE </h2>
+		<br>
+	    <form class="center" name=f method="post" >
+		<h5>
+		<center>
+		
+		<label> Email/Mobile Number </label>       
+		<input type="" placeholder="Enter email/mobile number" name="username" /> <br> <br>
+		
+		<label> Password </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="Password" placeholder="Enter Password" name="password" /> <br> <br>
+		
+		<button type="submit">Login</button><br> <br>
+		
+		</center>
+		</h5>
+	</form>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</body>
+</html>
